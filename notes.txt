@@ -1,6 +1,13 @@
 when to add curly brackets or not on imports
 https://stackoverflow.com/questions/36795819/when-should-i-use-curly-braces-for-es6-import
 
+ways to start up program
+from root:
+--> npm run dev
+or
+--> node server
 
 
 "multer": "^1.4.5-lts.1",
+
+bc hosting on render and they now charge for images/disk space, this project won't use Multer, instead will use a memory storage in cloudinary using the package npm i datauri@4.1.0
