@@ -28,12 +28,11 @@ const allJobsQuery = (params) => {
 export const loader =
   (queryClient) =>
   async ({ request }) => {
-    console.log("request.url: ", request.url);
     const params = Object.fromEntries([
       ...new URL(request.url).searchParams.entries(),
     ]);
     await queryClient.ensureQueryData(allJobsQuery(params));
-    console.log("params: ", params);
+
     return { searchValues: { ...params } };
   };
 
@@ -42,7 +41,6 @@ const AllJobs = () => {
   const { searchValues } = useLoaderData();
 
   const { data } = useQuery(allJobsQuery(searchValues));
-  console.log(data);
 
   return (
     <AllJobsContext.Provider value={{ data, searchValues }}>
