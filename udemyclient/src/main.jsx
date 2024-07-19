@@ -6,8 +6,8 @@ import "./index.css";
 import { Bounce, Slide, Zoom, ToastContainer } from "react-toastify";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <>
     <App />
     <ToastContainer position="top-center" autoClose={750} transition={Bounce} />
-  </React.StrictMode>
+  </>
 );

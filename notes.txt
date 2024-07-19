@@ -11,3 +11,8 @@ or
 "multer": "^1.4.5-lts.1",
 
 bc hosting on render and they now charge for images/disk space, this project won't use Multer, instead will use a memory storage in cloudinary using the package npm i datauri@4.1.0
+
+
+after deployment to render, to make changes on frontend visible need to run:
+from root --> npm run setup-production-app
+then from root --> node server   >>> to see project
