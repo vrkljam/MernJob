@@ -11,8 +11,6 @@ import { BigSidebar, Loading, Navbar, SmallSidebar } from "../components";
 import customFetch from "../utils/customFetch";
 import { toast } from "react-toastify";
 import { useQuery } from "@tanstack/react-query";
-import { response } from "express";
-import { IoSquare } from "react-icons/io5";
 
 // query key/fn from video #189
 const userQuery = {
