@@ -58,7 +58,7 @@ const DashboardLayout = ({ isDarkThemeEnabled, queryClient }) => {
   };
 
   customFetch.interceptors.response.use(
-    () => {
+    (response) => {
       return response;
     },
     (error) => {
